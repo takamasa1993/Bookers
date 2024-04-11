@@ -2,12 +2,17 @@
   <%= flash[:notice] %>
 </div>
 
-<h2>Title</h2>
-<p><%= @book.title %></p>
 
-<h2>Body</h2>
-<p><%= @book.body %></p>
+<div class = main>
+  
+  <div>
+    
+    <p><em>Title</em>:<%= @book.title %></p>
 
-
-<a href="/books/<%= @book.id %>/edit">Edit</a>
-<a href="/books">Back</a>
+    
+    <p><em>Body</em>:<%= @book.body %></p>
+  </div>
+  <div>
+    <a href="/books/<%= @book.id %>/edit">Edit</a>
+    <a href="/books">Back</a>
+  
